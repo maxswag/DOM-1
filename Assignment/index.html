@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div><input type="submit" onclick="toggleEX('one')" value="EX1"> <input type="submit" onclick="togglep('two')" value="EX2"> <input type="submit" onclick="togglep('three')" value="EX3"></div>
+    <div id="one" >
+    <p >This is a paragraph</p>
+
+ 
+    <input id="input" type="text" placeholder="Enter style"> 
+    <button onclick="changestyle('input')">Add class</button>
+</div>
+
+<div id="two" class="hidden">
+    <p id="first" class="visible">This is first paragraph</p>
+    <p id="second" class="visible">This is second paragraph</p>
+    <p id="third" class="visible">This is third paragraph</p>
+    <button onclick="togglep('first')">Toggle first paragraph</button> 
+    <button onclick="togglep('second')">Toggle second paragraph</button>
+    <button onclick="togglep('third')">Toggle third paragraph</button>
+</div>
+
+
+<div id="three" class="hidden">
+    <section>
+    <button onclick="change()" class="notclicked">Click</button>
+    </section>
+</div>
+    <script src="js.js"></script>
+</body>
+</html>
